@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+#board-container {
+  background-color: #ccc;
+  box-shadow: 0 0 14px 0px;
+  width: 60%;
+  max-width: 992px;
+  height: fit-content;
+  margin: 20px auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
+}
+.cell {
+  cursor: pointer;
+  width: 20px;
+  text-align: center;
+  vertical-align: middle;
+  height: 20px;
+  background-color: #fff;
+  border: 1px solid #f1c779;
+}
+.cell span{
+  line-height: 20px;
+  font-size: 20px;
+}
+#container{
+  padding: 0 50px;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.main{
+  background-image: url(../public/images/bacgrounds.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main1{
+  background-image: url(../public/images/bacgroundsStart.jpg);
+}
+
+@font-face {
+  font-family: titleFont;
+  src: url(./assets/font/titleFont.otf);
+}
+@font-face {
+  font-family: timeFont;
+  src: url(./assets/font/timeFont.ttf);
+}
+
+@keyframes wave {
+  0%{
+      transform: translateY(0);
   }
-  to {
-    transform: rotate(360deg);
+  50%{
+      transform: translateY(-5px);
+  }
+  100%{
+      transform: translateY(0);
   }
 }

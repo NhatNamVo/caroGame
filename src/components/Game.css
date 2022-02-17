@@ -1,0 +1,8 @@
+div#player1, div#player2{
+    font-family: timeFont;
+    font-size: 50px;
+    color: #51A1C2;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+}
+

@@ -1,0 +1,80 @@
+
+.formInput{
+    width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    height: 100vh;
+}
+.formInput__body{
+    padding: 25% 100px 150px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.formInput__body .form{
+    position: relative;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    border: none;
+    box-shadow: 0 2px 5px 0 #fcf;
+    min-width: 200px;
+    max-width: 500px;
+}
+.form.active{
+    outline: 1px solid red;
+}
+.formInput button{
+    position: relative;
+    z-index: 20;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 #fcf;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fa8703;
+    cursor: pointer;
+}
+.formInput button:hover{
+    animation: wave 1s 0s infinite ease-in;
+}
+h1{
+    font-family: titleFont;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 120px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff;
+    color: #fa8703;
+}
+h1 span:first-of-type{
+    color: rgb(252, 185, 0);
+}
+h1 span:last-of-type{
+    color: rgb(51, 2, 45);
+}
+
+.anime{
+    position: absolute;
+    display: block;
+}
+
+.img1{
+    top: 70%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.img2{
+    top: 70;
+    left: 51%;
+    transform: translate(-50%,-50%);
+    z-index: 0;
+}
+
