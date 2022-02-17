@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+# Game caro
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Game được xây dựng bằng thư viện Reactjs- thư viện được facebook tạo ra năm 2011.
+Game mô phỏng trò chơi caro nổi tiếng một thời mà không một ai đã từng là học sinh thì không thể bỏ qua.
 
-## Available Scripts
+## Những tính năng trong game
+- Nhập tên 2 người chơi tương ứng lần lượt với ô X và O.
+- Sau khi nhập tên người dùng thứ 2 thì nhất nút bất đầu để bắt đầu trò chơi.
+- Trò chơi sẽ có thời gian quy định trong vòng 20 phút. Nếu trong khoảng thời gian này chưa ai thắng thì đồng hồ sẽ dừng lại và báo kết quả hòa. Lúc này một thông báo sẽ hiển thị ra. Nếu muốn chơi lại thì bấm vào nút chơi lại. Nếu không thì dừng cuộc chơi.
+- Nếu một ai đó thắng, thì thống báo sẽ hiển thị tên người thắng và thời gian chung cuộc của trận đấu. Ô thông báo cũng có nút chơi lại và dừng cuộc chơi.
+- Độ rộng của bàn cờ là không xác định (giá trị ban đầu là 30x30). Tự động co dãn kích thước bàn cờ theo số ô người dùng chơi (Tính năng này nhà phát triển chưa cập nhận. Hẹn mọi người ở version tới. Xin thứ lỗi)
 
-In the project directory, you can run:
+## Luật chơi
+- Nếu mỗi bên đạt được năm ô cờ chung hàng (có thể là hàng ngang, hàng dọc, hàng chéo) thì thắng. Lưu ý, nếu đạt được năm ô cùng hàng mà bị chặn trước hai đầu là chưa thắng. Chỉ có năm ô cùng hàng mới thắng, 6,..n ô thì không thắng.
+- Sau 20p chơi nếu chưa xác định được người thắng thì báo kết quả hoà.
 
-### `npm start`
+## Cách chạy chương trình
+- B1: Sau khi tải về và giải nén. Vào thư mục chứa dữ liệu của game
+- B2: Nhập từ khóa "cmd" trên thanh địa chỉ của thư mục
+- B3: Hộp thoại Command Prompt được mở lên. Tại cửa sổ của hộp thoại này nhập key: "npm i". Để cài đặt chương trình
+- B4: Đợi cho đến khi chương trình chạy xong. Tại cửa sổ làm việc của cmd tiếp tục nhập key: "npm start". Để chạy chương trình.
+- B5: Chương trình sẽ được tự động chạy trên browser của bạn
+Ok--> Vào chiến game với bạn bè thôi nào.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Nhóm phát triển 1 thành viên
+- Tên: Võ Nhật Nam
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Xin cảm ơn mọi người đã quan tâm và chơi game của mình. Mong nhận được sự tương tác từ các bạn để mình ngày càng hoàn thiện hơn.
 
-### `npm test`
+### Trân trọng
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
